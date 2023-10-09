@@ -14,6 +14,7 @@
 		D996EF942AD409B70022C909 /* farmako_taskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D996EF932AD409B70022C909 /* farmako_taskTests.swift */; };
 		D996EF9E2AD409B70022C909 /* farmako_taskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D996EF9D2AD409B70022C909 /* farmako_taskUITests.swift */; };
 		D996EFA02AD409B70022C909 /* farmako_taskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D996EF9F2AD409B70022C909 /* farmako_taskUITestsLaunchTests.swift */; };
+		D996EFAE2AD40AB80022C909 /* BatteryInfoFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D996EFAD2AD40AB80022C909 /* BatteryInfoFetcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,9 @@
 		D996EF992AD409B70022C909 /* farmako_taskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = farmako_taskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D996EF9D2AD409B70022C909 /* farmako_taskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = farmako_taskUITests.swift; sourceTree = "<group>"; };
 		D996EF9F2AD409B70022C909 /* farmako_taskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = farmako_taskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D996EFAC2AD40AB80022C909 /* farmako_task-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "farmako_task-Bridging-Header.h"; sourceTree = "<group>"; };
+		D996EFAD2AD40AB80022C909 /* BatteryInfoFetcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BatteryInfoFetcher.m; sourceTree = "<group>"; };
+		D996EFAF2AD44D060022C909 /* BatteryInfoFetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BatteryInfoFetcher.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +100,11 @@
 			children = (
 				D996EF822AD409B60022C909 /* farmako_taskApp.swift */,
 				D996EF842AD409B60022C909 /* ContentView.swift */,
+				D996EFAD2AD40AB80022C909 /* BatteryInfoFetcher.m */,
 				D996EF862AD409B70022C909 /* Assets.xcassets */,
 				D996EF882AD409B70022C909 /* Preview Content */,
+				D996EFAC2AD40AB80022C909 /* farmako_task-Bridging-Header.h */,
+				D996EFAF2AD44D060022C909 /* BatteryInfoFetcher.h */,
 			);
 			path = farmako_task;
 			sourceTree = "<group>";
@@ -195,6 +202,7 @@
 				TargetAttributes = {
 					D996EF7E2AD409B60022C909 = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 					D996EF8E2AD409B70022C909 = {
 						CreatedOnToolsVersion = 15.0;
@@ -259,6 +267,7 @@
 			files = (
 				D996EF852AD409B60022C909 /* ContentView.swift in Sources */,
 				D996EF832AD409B60022C909 /* farmako_taskApp.swift in Sources */,
+				D996EFAE2AD40AB80022C909 /* BatteryInfoFetcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"farmako_task/Preview Content\"";
@@ -438,6 +448,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Stithi.farmako-task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "farmako_task/farmako_task-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,6 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"farmako_task/Preview Content\"";
@@ -467,6 +480,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Stithi.farmako-task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "farmako_task/farmako_task-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
